@@ -1,0 +1,204 @@
+main{
+  display: flex;
+  width: 100%;
+}
+
+.logoAlura{
+  width: 120px;
+  height: 48px;
+  margin: 40px 0 0 40px;
+}
+
+.text-area{
+  width: 680px;
+  height: 48px;
+  margin-top: 168px;
+  text-transform: lowercase;
+}
+
+::placeholder{
+  color: #0A3871;
+}
+
+.text-area:focus{
+  outline: none;
+}
+
+.informacao h6{
+  color: #495057;
+  font-size: 15px;
+  margin-top: 290px;
+}
+
+.informacao i{
+  font-size: 16px;
+  color: #495057;
+}
+
+.botoes{
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn-encriptar{
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #FFF;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btn-desencriptar{
+  background: #D8DFE8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+
+.mensagem{
+  width: 400px;
+  height: 650px;
+  margin: 35px 0 0 200px;
+  padding: 10px 0 0 15px;
+  background: #FFF;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: #495057;
+}
+
+.mensagem:focus{
+  outline: none;
+}
+
+.mensagem::placeholder{
+  color: #343A40;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.result img{
+  margin: 145px 0 0 -345px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  background-color: #FFF;
+}
+
+.result h6{
+  font-size: 24px;
+  font-weight: 700;
+  width: 336px;
+  height: 58px;
+  margin: 470px 0 0 -320px;
+  background-color: #FFF;
+}
+
+.result p{
+  width: 250px;
+  height: 58px;
+  color: #343A40;
+  font-size: 14px;
+  margin: 540px 0 0 -300px;
+  background-color: #FFF;
+}
+
+.btn-copiar{
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  background-color: #FFF;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin: 550px 0 0 200px;
+  position: absolute;
+  width: 336px;
+  visibility: hidden;
+}
+
+@media(max-width: 1024px){
+  main{
+    flex-direction: column;
+  }
+  .logoAlura{
+    margin: 100px 0 0 10px;
+  }
+  .text-area{
+    margin: 150px 0 0 60px;
+    font-size: 32px;
+  }
+  .informacao i{
+    margin: 300px 0 0 60px;
+  }
+  .botoes{
+    margin: 20px 0 0 60px;
+  }
+  .result .mensagem{
+    width: 90%;
+    height: 200px;
+    margin: 40px 0 0 -10px;
+  }
+  .result img{
+    display: none;
+  }
+  .result h6{
+    width: 520px;
+    margin: 60px 0 0 -650px;
+    font-size: 32px;
+  }
+  .result p{
+    width: 750px;
+    margin: 120px 0 0 -650px;
+    font-size: 24px;
+  }
+  .btn-copiar{
+    visibility: hidden;
+    margin: 150px 0 0 -10px;
+    width: 85%;
+  }
+}
+
+@media(max-width: 412px){
+  .logoAlura{
+    margin: 30px 0 0 -30px;
+  }
+  .text-area{
+    margin: 60px 0 -100px 20px;
+  }
+  .informacao i{
+    margin: 10px 0 0 20px;
+  }
+  .botoes{
+    flex-direction: column;
+    margin: 20px;
+  }
+  .btn-desencriptar{
+    margin: 20px 0 0 1px;
+  }
+  .result .mensagem{
+    margin: 10px 0 0 -10px;
+  }
+  .result h6{
+    width: 70%;
+    margin: 30px 0 0 -330px;
+    font-size: 24px;
+  }
+  .result p {
+    width: 70%;
+    margin: 110px 0 0 -290px;
+    font-size: 16px;
+  }
+  .btn-copiar{
+    margin: 130px;
+  }
+}
